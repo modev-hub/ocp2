@@ -1,0 +1,556 @@
+/* BODDY ************************************************/
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* COLUMN LEFT *******************************************/
+
+.column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #212121;
+  width: 32%;
+}
+
+.column-left h3 {
+  background-color: #FDD835;
+  color: #212121;
+  text-align: center;
+  font-size: 1.8em;
+  padding: 8px;
+  margin: 0px 0px 40px;
+  letter-spacing: 1px;
+}
+
+.column-left p {
+  margin: 16px 60px;
+  color: #FDD835;
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+.column-left a {
+  text-decoration: none;
+  color: #FDD835;
+}
+
+/* Picture */
+
+.picture {
+  text-align: center;
+  margin: 70px 0px 40px; 
+}
+
+img {
+  border: 7px solid #282828;
+  border-radius: 50%;
+}
+
+/* About */
+
+.about {
+  flex-grow: 2;
+  margin: 40px 0px;
+}
+
+/* Contact */
+
+.contact {
+  margin-bottom: 40px;
+}
+
+/* Hobbies */
+
+.fa-hobbies {
+  display: flex;
+  justify-content: center;
+}
+
+.fa-hobbies i {
+  background: #FDD835;
+  margin: 10px 10px 50px;
+  font-size: 45px;
+  color: #212121;
+  padding: 0px;
+  border: 2px solid #FDD835;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 75px;
+  width: 79px;
+  height: 79px;
+}
+
+/* COLUMN RIGHT *******************************************/
+
+.column-right {
+  display: flex;
+  flex-direction: column;
+  background-color: #FAFAFA;
+  width: 68%;
+}
+
+.column-right p {
+  font-size: 1.2em;
+  margin: 0px;
+}
+
+.column-right h3 {
+  font-size: 1.8em;
+  margin: 20px 60px 20px 70px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.column-right hr {
+  height: 3px;
+  border: none;
+  background-color: #FDD835;
+  margin: 0px 70px;
+}
+
+.column-right h4 {
+  font-size: 1.5em;
+  margin: 0px 0px;
+  font-weight: 500;
+}
+
+.column-right h5 {
+  font-size: 1.2em;
+  margin: 10px 0px;
+  font-weight: 500;
+}
+
+.column-right a {
+  text-decoration: none;
+  color: #212121;
+}
+
+/* Header */
+
+.header h1 {
+  font-size: 4.4em;
+  font-style: normal;
+  margin: 120px 60px 8px 70px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+ 
+.header h1 em {
+  color: #FDD835;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.header h2 {
+  font-size: 2em;
+  font-style: normal;
+  margin: 0px 60px 0px 70px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.devel {
+  height: 3px;
+  width: 90px;
+  border: none;
+  background-color: #FDD835;
+  margin: 0px 60px 120px 70px;
+}
+
+/* Education */
+
+.education {
+  margin-top: 150px;
+}
+
+.openclassrooms {
+  display: flex;
+}
+
+.university {
+  display: flex;
+}
+
+/* Experience */
+
+.design-inc1 {
+  display: flex;
+}
+
+.design-inc2 {
+  display: flex;
+}
+
+.design-inc3 {
+  display: flex;
+}
+
+/* Dl, dt, dd */
+
+.column-right dl {
+  margin: 40px 70px 40px 0px;
+}
+
+.dt {
+  width: 38%;
+  display: flex;
+  margin-left: 70px;
+  font-weight: 500;
+}
+
+.dd {
+  width: 62%;
+  margin: 0px;
+}
+
+/* Recommandation */
+
+.recommandation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recommandation li {
+  margin: 40px 70px;
+}
+
+.contact-recommandation {
+  display: flex;
+}
+
+.kieman {
+  width: 50%;
+}
+
+/* Icon */
+
+.column-right i {
+  color: #FDD835;
+  margin-right: 30px;
+}
+
+.fas.fa-circle {
+  font-size: 0.8em;
+}
+
+/* Hidden */
+
+.hidden-header {
+  display: none;
+}
+
+.hidden-contact {
+  display: none;
+}
+
+.hidden-hobbies {
+  display: none;
+}
+
+/* MEDIA QUERIES *******************************************/
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    #container{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .column-left {
+      width: 100%
+    }
+
+    .column-right { 
+      width: 100%
+    }
+
+/* HEADER */
+
+    .header {
+      display: none;
+    }
+
+    .hidden-header {
+      display: flex;
+      flex-direction: column;
+      background-color: #FAFAFA;
+    }
+
+    .hidden-header h1 {
+      font-size: 3.5em;
+      font-style: normal;
+      margin: 40px 70px 0px 70px;
+      font-weight: 200;
+      letter-spacing: 2px;
+    }
+
+    .hidden-header h1 em {
+      color: #FDD835;
+      font-style: normal;
+      font-weight: 500;
+    }
+
+    .hidden-header h2 {
+      font-size: 2em;
+      font-style: normal;
+      margin: 0px 70px 0px 70px;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    .hidden-header hr {
+      height: 3px;
+      width: 90px;
+      border: none;
+      background-color: #FDD835;
+      margin: 0px 60px 80px 70px;
+    }
+
+/* CONTACT */    
+
+    .contact {
+      display: none;
+    }
+
+    .hidden-contact {
+      display: flex;
+      flex-direction: column;
+      background-color: #212121;
+      justify-content: center;
+      padding-bottom: 40px;
+    }
+
+    .hidden-contact p {
+      margin: 16px 60px;
+      color: #FDD835;
+      font-size: 1.2em;
+      text-align: center;
+    }
+
+    .hidden-contact h3 {
+        background-color: #FDD835;
+        color: #212121;
+        letter-spacing: 1px;
+        text-align: center;
+        font-size: 1.5em;
+        padding: 8px;
+        margin: 0px 0px 40px;
+    }
+
+    .hidden-contact a {
+        text-decoration: none;
+        color: #FDD835;
+    }
+
+/* HOBBIES */
+
+    .hobbies {
+      display: none;
+    }
+
+    .hidden-hobbies {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background-color: #212121;
+      justify-content: center;
+    }
+
+    .hidden-hobbies i {
+      background: #FDD835;
+      margin: 10px 20px 50px;
+      font-size: 45px;
+      color: #212121;
+      padding: 0px;
+      border: 2px solid #FDD835;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 75px;
+      width: 79px;
+      height: 79px;
+    }
+
+    .hidden-hobbies h3 {
+        background-color: #FDD835;
+        color: #212121;
+        letter-spacing: 1px;
+        text-align: center;
+        font-size: 1.5em;
+        padding: 8px;
+        margin: 0px 0px 40px;
+    }
+
+    /* Education */
+
+    .education {
+      margin-top: 80px;
+    }
+
+    /* Recommendation */
+
+    .recommandation {
+      margin-bottom: 40px;
+    }
+}
+
+/* Small devices (landscape phones, less than 668px) */
+@media (max-width: 667,98px) {
+  #container{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .column-left {
+      width: 100%
+    }
+
+    .column-right { 
+      width: 100%
+    }
+
+    .column-right h3 {
+      font-size: 1em;
+    }
+
+    .container p {
+      font-size: 1.2em;
+    }
+
+
+
+/* HEADER */
+
+    .header {
+      display: none;
+    }
+
+    .hidden-header {
+      display: flex;
+      flex-direction: column;
+      background-color: #FAFAFA;
+    }
+
+    .hidden-header h1 {
+      font-size: 3em;
+      font-style: normal;
+      margin: 40px 70px 0px 70px;
+      font-weight: 200;
+      letter-spacing: 2px;
+    }
+
+    .hidden-header h1 em {
+      color: #FDD835;
+      font-style: normal;
+      font-weight: 500;
+    }
+
+    .hidden-header h2 {
+      font-size: 2em;
+      font-style: normal;
+      margin: 0px 70px 0px 70px;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    .hidden-header hr {
+      height: 3px;
+      width: 90px;
+      border: none;
+      background-color: #FDD835;
+      margin: 0px 60px 80px 70px;
+    }
+
+/* CONTACT */    
+
+    .contact {
+      display: none;
+    }
+
+    .hidden-contact {
+      display: flex;
+      flex-direction: column;
+      background-color: #212121;
+      justify-content: center;
+      padding-bottom: 40px;
+    }
+
+    .hidden-contact p {
+      margin: 16px 60px;
+      color: #FDD835;
+      font-size: 1.2em;
+      text-align: center;
+    }
+
+    .hidden-contact h3 {
+        background-color: #FDD835;
+        color: #212121;
+        letter-spacing: 2px;
+        text-align: center;
+        font-size: 1em;
+        padding: 8px;
+        margin: 0px 0px 40px;
+    }
+
+    .hidden-contact a {
+        text-decoration: none;
+        color: #FDD835;
+    }
+
+/* HOBBIES */
+
+    .hobbies {
+      display: none;
+    }
+
+    .hidden-hobbies {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background-color: #212121;
+      justify-content: center;
+    }
+
+    .hidden-hobbies i {
+      background: #FDD835;
+      margin: 10px 20px 50px;
+      font-size: 45px;
+      color: #212121;
+      padding: 0px;
+      border: 2px solid #FDD835;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 75px;
+      width: 79px;
+      height: 79px;
+    }
+
+    .hidden-hobbies h3 {
+        background-color: #FDD835;
+        color: #212121;
+        text-align: center;
+        font-size: 1em;
+        padding: 8px;
+        margin: 0px 0px 40px;
+    }
+
+    /* Education */
+
+    .education {
+      margin-top: 80px;
+    }
+
+    /* Recommendation */
+
+    .recommandation {
+      margin-bottom: 40px;
+    }
+}
