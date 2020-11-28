@@ -273,6 +273,10 @@ img {
       width: 100%
     }
 
+    .column-right h3 {
+      font-size: 1.5em;
+    }
+
 /* HEADER */
 
     .header {
@@ -286,7 +290,7 @@ img {
     }
 
     .hidden-header h1 {
-      font-size: 3.5em;
+      font-size: 4.9em;
       font-style: normal;
       margin: 40px 70px 0px 70px;
       font-weight: 200;
@@ -300,7 +304,7 @@ img {
     }
 
     .hidden-header h2 {
-      font-size: 2em;
+      font-size: 3em;
       font-style: normal;
       margin: 0px 70px 0px 70px;
       font-weight: 500;
@@ -313,6 +317,34 @@ img {
       border: none;
       background-color: #FDD835;
       margin: 0px 60px 80px 70px;
+    }
+
+/* PICTURE */
+
+    img {
+      width: 50%;
+    }
+
+/* ABOUT */
+
+    .about p {
+      font-size: 0.8em;
+    }
+
+    .about h3 {
+      font-size: 1.5em;
+    }
+
+/* EDUCATION */
+
+    .education {
+      margin-top: 80px;
+    }
+
+/* RECOMMENDATION */
+
+    .recommandation {
+      margin-bottom: 40px;
     }
 
 /* CONTACT */    
@@ -387,17 +419,5 @@ img {
         font-size: 1.8em;
         padding: 8px;
         margin: 0px 0px 40px;
-    }
-
-    /* Education */
-
-    .education {
-      margin-top: 80px;
-    }
-
-    /* Recommendation */
-
-    .recommandation {
-      margin-bottom: 40px;
     }
 }
