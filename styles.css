@@ -2,11 +2,13 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  width: 100%;
 }
 
 #container {
   display: flex;
   flex-flow: row wrap;
+  width: 100%;
 }
 
 /* COLUMN LEFT *******************************************/
@@ -180,6 +182,15 @@ img {
 
 /* Experience */
 
+.experience h3 br {
+  display: none;
+}
+
+.experience em {
+  font-style: normal;
+  margin-left: 5px
+}
+
 .design-inc1 {
   display: flex;
 }
@@ -257,12 +268,12 @@ img {
 
 /* MEDIA QUERIES *******************************************/
 
-/* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
+/* Small devices (landscape phones) */
+@media (max-width: 475.98px) {  
 
     #container{
-        display: flex;
-        flex-flow: column wrap;
+      display: flex;
+      flex-flow: column wrap;
     }
 
     .column-left {
@@ -274,7 +285,36 @@ img {
     }
 
     .column-right h3 {
-      font-size: 1.5em;
+      margin: 20px 10px;
+      font-size: 1.3em;
+    }
+
+    .column-right h3 i {
+      margin-left: 5px;
+    }
+
+    .column-right h4 {
+      font-size: 1em;
+    }
+
+    .column-right h5 {
+      font-size: 1em;
+    }
+
+    .column-right dt {
+      margin-left: 20px;
+    }
+
+    .column-right dd {
+      margin: 10px 65px;
+    }
+
+    .column-right dl {
+      margin: 40px 0px
+    }
+
+    .column-right p {
+      font-size: 1em;
     }
 
 /* HEADER */
@@ -290,11 +330,12 @@ img {
     }
 
     .hidden-header h1 {
-      font-size: 4.9em;
+      font-size: 3em;
       font-style: normal;
-      margin: 40px 70px 0px 70px;
+      margin: 40px 10px 0px 10px;
       font-weight: 200;
       letter-spacing: 2px;
+      width: 100%;  
     }
 
     .hidden-header h1 em {
@@ -304,48 +345,330 @@ img {
     }
 
     .hidden-header h2 {
-      font-size: 2.5em;
+      font-size: 1.3em;
       font-style: normal;
-      margin: 0px 70px 0px 70px;
+      margin: 0px 10px;
       font-weight: 500;
       letter-spacing: 1px;
     }
 
     .hidden-header hr {
       height: 3px;
-      width: 90px;
+      width: 65px;
       border: none;
       background-color: #FDD835;
-      margin: 0px 60px 80px 70px;
+      margin: 0px 10px 60px;
     }
 
 /* PICTURE */
 
     img {
-      width: 40%;
+      width: 60%; 
     }
 
 /* ABOUT */
 
     .about p {
+      margin: 16px 20px;
       font-size: 1em;
     }
 
     .about h3 {
-      font-size: 1.5em;
+      font-size: 1.3em;
     }
 
 /* EDUCATION */
 
     .education {
-      margin-top: 80px;
+      margin-top: 40px;
+    }
+
+    .openclassrooms {
+      flex-direction: column;
+    }
+
+    .university {
+      flex-direction: column;
+    }
+
+/* Experience */
+
+    .experience h3 br {
+      display: block;
+    }
+
+    .experience em {
+      font-style: normal;
+      margin-left: 57px;
+    }
+
+    .design-inc1 {
+     flex-direction: column;
+    }
+
+    .design-inc2 {
+     flex-direction: column;
+    }
+
+    .design-inc3 {
+     flex-direction: column;
     }
 
 /* RECOMMENDATION */
 
-    .recommandation {
-      margin-bottom: 40px;
+    .contact-recommandation {
+      flex-direction: column;
     }
+
+    .recommandation {
+      margin-bottom: 60px;
+    }
+
+    .kieman {
+      width: 100%;
+    }
+
+    .recommandation li {
+  margin: 40px 70px 0px;
+}
+
+/* CONTACT */    
+
+    .contact {
+      display: none;
+    }
+
+    .hidden-contact {
+      display: flex;
+      flex-direction: column;
+      background-color: #212121;
+      justify-content: center;
+      padding-bottom: 40px;
+    }
+
+    .hidden-contact p {
+      margin: 16px 60px;
+      color: #FDD835;
+      font-size: 1em;
+      text-align: center;
+    }
+
+    .hidden-contact h3 {
+        background-color: #FDD835;
+        color: #212121;
+        letter-spacing: 1px;
+        text-align: center;
+        font-size: 1.3em;
+        padding: 8px;
+        margin: 0px 0px 40px;
+    }
+
+    .hidden-contact a {
+        text-decoration: none;
+        color: #FDD835;
+    }
+
+/* HOBBIES */
+
+    .hobbies {
+      display: none;
+    }
+
+    .hidden-hobbies {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background-color: #212121;
+      justify-content: center;
+    }
+
+    .hidden-hobbies i {
+      background: #FDD835;  
+      margin: 10px 20px 50px;
+      font-size: 45px;
+      color: #212121;
+      padding: 0px;
+      border: 2px solid #FDD835;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 75px;
+      width: 79px;
+      height: 79px;
+    }
+
+    .hidden-hobbies h3 {
+        background-color: #FDD835;
+        color: #212121;
+        letter-spacing: 1px;
+        text-align: center;
+        font-size: 1.3em;
+        padding: 8px;
+        margin: 0px 0px 40px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    #container {
+      display: flex;
+      flex-flow: column wrap;
+    }
+
+    .column-left {
+      width: 100%
+    }
+
+    .column-right { 
+      width: 100%
+    }
+
+    .column-right h3 {
+      margin: 20px 10px;
+      font-size: 1.3em;
+    }
+
+    .column-right h3 i {
+      margin-left: 5px;
+    }
+
+    .column-right h4 {
+      font-size: 1.2em;
+    }
+
+    .column-right h5 {
+      font-size: 1.1em;
+    }
+
+    .column-right dt {
+      margin-left: 20px;
+    }
+
+    .column-right dd {
+      margin: 10px 65px;
+    }
+
+    .column-right dl {
+      margin: 40px 0px
+    }
+
+    .column-right p {
+      font-size: 1.2em;
+    }
+
+/* HEADER */
+
+    .header {
+      display: none;
+    }
+
+    .hidden-header {
+      display: flex;
+      flex-direction: column;
+      background-color: #FAFAFA;
+    }
+
+    .hidden-header h1 {
+      font-size: 3em;
+      font-style: normal;
+      margin: 40px 10px 0px 10px;
+      font-weight: 200;
+      letter-spacing: 2px;
+      width: 100%;  
+    }
+
+    .hidden-header h1 em {
+      color: #FDD835;
+      font-style: normal;
+      font-weight: 500;
+    }
+
+    .hidden-header h2 {
+      font-size: 1.3em;
+      font-style: normal;
+      margin: 0px 10px;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    .hidden-header hr {
+      height: 3px;
+      width: 65px;
+      border: none;
+      background-color: #FDD835;
+      margin: 0px 10px 60px;
+    }
+
+/* PICTURE */
+
+    img {
+      width: 60%; 
+    }
+
+/* ABOUT */
+
+    .about p {
+      margin: 16px 20px;
+      font-size: 1.2em;
+    }
+
+    .about h3 {
+      font-size: 1.3em;
+    }
+
+/* EDUCATION */
+
+    .education {
+      margin-top: 40px;
+    }
+
+    .openclassrooms {
+      flex-direction: column;
+    }
+
+    .university {
+      flex-direction: column;
+    }
+
+/* Experience */
+
+    .experience h3 br {
+      display: none;
+    }
+
+   /* .experience em {
+      font-style: normal;
+      margin-left: 57px;
+    }*/
+
+    .design-inc1 {
+     flex-direction: column;
+    }
+
+    .design-inc2 {
+     flex-direction: column;
+    }
+
+    .design-inc3 {
+     flex-direction: column;
+    }
+
+/* RECOMMENDATION */
+
+    .contact-recommandation {
+      flex-direction: column;
+    }
+
+    .recommandation {
+      margin-bottom: 60px;
+    }
+
+    .kieman {
+      width: 100%;
+    }
+
+    .recommandation li {
+  margin: 40px 70px 0px;
+}
 
 /* CONTACT */    
 
@@ -373,7 +696,7 @@ img {
         color: #212121;
         letter-spacing: 1px;
         text-align: center;
-        font-size: 1.6em;
+        font-size: 1.3em;
         padding: 8px;
         margin: 0px 0px 40px;
     }
@@ -398,7 +721,7 @@ img {
     }
 
     .hidden-hobbies i {
-      background: #FDD835;
+      background: #FDD835;  
       margin: 10px 20px 50px;
       font-size: 45px;
       color: #212121;
@@ -416,8 +739,9 @@ img {
         color: #212121;
         letter-spacing: 1px;
         text-align: center;
-        font-size: 1.6em;
+        font-size: 1.3em;
         padding: 8px;
         margin: 0px 0px 40px;
     }
+}
 }
