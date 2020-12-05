@@ -391,7 +391,7 @@ img {
       flex-direction: column;
     }
 
-/* Experience */
+/* EXPERIENCE */
 
     .experience h3 br {
       display: block;
@@ -424,13 +424,13 @@ img {
       margin-bottom: 60px;
     }
 
+    .recommandation li {
+      margin: 40px 70px 0px;
+    }
+
     .kieman {
       width: 100%;
     }
-
-    .recommandation li {
-  margin: 40px 70px 0px;
-}
 
 /* CONTACT */    
 
@@ -629,16 +629,11 @@ img {
       flex-direction: column;
     }
 
-/* Experience */
+/* EXPERIENCE */
 
     .experience h3 br {
       display: none;
     }
-
-   /* .experience em {
-      font-style: normal;
-      margin-left: 57px;
-    }*/
 
     .design-inc1 {
      flex-direction: column;
@@ -667,8 +662,8 @@ img {
     }
 
     .recommandation li {
-  margin: 40px 70px 0px;
-}
+      margin: 40px 70px 0px;
+    }
 
 /* CONTACT */    
 
@@ -743,5 +738,4 @@ img {
         padding: 8px;
         margin: 0px 0px 40px;
     }
-}
 }
